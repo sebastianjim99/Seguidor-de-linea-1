@@ -1,0 +1,365 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/main.o
+resetVec CODE 0 721 721 3 2
+code CODE 0 724 724 DC 2
+udata_bank0 BANK0 1 20 20 2 1
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 22-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 22-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 0-720 2
+CONST 800-1FFF 2
+ENTRY 0-720 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 0-720 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 0-720 2
+STRCODE 800-1FFF 2
+STRING 0-720 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/main.o
+721 resetVec CODE >64:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+723 resetVec CODE >65:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+724 code CODE >75:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+725 code CODE >76:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+726 code CODE >82:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+727 code CODE >83:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+728 code CODE >84:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+729 code CODE >85:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+72A code CODE >86:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+72B code CODE >88:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+72C code CODE >89:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+72D code CODE >90:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+72E code CODE >91:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+72F code CODE >92:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+730 code CODE >93:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+731 code CODE >94:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+732 code CODE >98:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+733 code CODE >100:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+734 code CODE >110:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+735 code CODE >111:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+736 code CODE >112:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+737 code CODE >113:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+738 code CODE >114:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+739 code CODE >115:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+73A code CODE >116:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+73B code CODE >117:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+73C code CODE >118:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+73D code CODE >119:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+73E code CODE >120:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+73F code CODE >125:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+740 code CODE >126:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+741 code CODE >127:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+742 code CODE >128:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+743 code CODE >129:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+744 code CODE >130:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+745 code CODE >131:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+746 code CODE >132:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+747 code CODE >133:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+748 code CODE >134:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+749 code CODE >138:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+74A code CODE >139:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+74B code CODE >140:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+74C code CODE >141:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+74D code CODE >142:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+74E code CODE >143:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+74F code CODE >144:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+750 code CODE >145:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+751 code CODE >146:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+752 code CODE >150:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+753 code CODE >151:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+754 code CODE >152:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+755 code CODE >153:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+756 code CODE >154:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+757 code CODE >155:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+758 code CODE >156:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+759 code CODE >157:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+75A code CODE >161:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+75B code CODE >162:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+75C code CODE >163:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+75D code CODE >164:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+75E code CODE >165:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+75F code CODE >166:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+760 code CODE >167:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+761 code CODE >172:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+762 code CODE >173:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+763 code CODE >174:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+764 code CODE >175:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+765 code CODE >176:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+766 code CODE >177:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+767 code CODE >178:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+768 code CODE >179:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+769 code CODE >180:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+76A code CODE >184:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+76B code CODE >185:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+76C code CODE >186:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+76D code CODE >187:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+76E code CODE >188:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+76F code CODE >189:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+770 code CODE >190:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+771 code CODE >191:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+772 code CODE >195:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+773 code CODE >196:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+774 code CODE >197:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+775 code CODE >198:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+776 code CODE >199:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+777 code CODE >200:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+778 code CODE >201:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+779 code CODE >204:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+77A code CODE >205:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+77B code CODE >206:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+77C code CODE >207:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+77D code CODE >208:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+77E code CODE >209:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+77F code CODE >213:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+780 code CODE >214:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+781 code CODE >215:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+782 code CODE >229:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+783 code CODE >230:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+784 code CODE >231:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+785 code CODE >234:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+786 code CODE >235:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+787 code CODE >236:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+788 code CODE >239:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+789 code CODE >240:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+78A code CODE >241:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+78B code CODE >244:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+78C code CODE >245:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+78D code CODE >246:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+78E code CODE >247:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+78F code CODE >254:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+790 code CODE >255:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+791 code CODE >256:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+792 code CODE >259:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+793 code CODE >260:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+794 code CODE >261:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+795 code CODE >264:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+796 code CODE >265:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+797 code CODE >266:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+798 code CODE >270:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+799 code CODE >271:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+79A code CODE >272:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+79B code CODE >273:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+79C code CODE >279:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+79D code CODE >280:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+79E code CODE >281:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+79F code CODE >285:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A0 code CODE >286:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A1 code CODE >287:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A2 code CODE >288:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A3 code CODE >289:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A4 code CODE >292:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A5 code CODE >293:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A6 code CODE >294:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A7 code CODE >301:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A8 code CODE >302:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7A9 code CODE >303:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7AA code CODE >307:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7AB code CODE >308:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7AC code CODE >309:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7AD code CODE >310:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7AE code CODE >311:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7AF code CODE >314:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B0 code CODE >315:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B1 code CODE >316:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B2 code CODE >325:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B3 code CODE >326:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B4 code CODE >327:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B5 code CODE >330:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B6 code CODE >331:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B7 code CODE >332:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B8 code CODE >335:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7B9 code CODE >336:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7BA code CODE >337:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7BB code CODE >344:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7BC code CODE >345:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7BD code CODE >346:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7BE code CODE >349:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7BF code CODE >350:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C0 code CODE >351:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C1 code CODE >352:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C2 code CODE >353:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C3 code CODE >354:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C4 code CODE >357:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C5 code CODE >358:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C6 code CODE >359:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C7 code CODE >366:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C8 code CODE >367:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7C9 code CODE >368:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7CA code CODE >371:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7CB code CODE >372:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7CC code CODE >373:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7CD code CODE >376:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7CE code CODE >377:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7CF code CODE >378:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D0 code CODE >399:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D1 code CODE >400:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D2 code CODE >401:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D3 code CODE >402:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D4 code CODE >406:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D5 code CODE >407:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D6 code CODE >408:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D7 code CODE >409:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D8 code CODE >410:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7D9 code CODE >414:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7DA code CODE >415:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7DB code CODE >416:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7DC code CODE >417:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7DD code CODE >418:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7DE code CODE >419:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7DF code CODE >423:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E0 code CODE >424:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E1 code CODE >425:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E2 code CODE >426:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E3 code CODE >427:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E4 code CODE >428:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E5 code CODE >429:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E6 code CODE >432:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E7 code CODE >433:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E8 code CODE >434:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7E9 code CODE >435:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7EA code CODE >436:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7EB code CODE >437:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7EC code CODE >438:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7ED code CODE >439:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7EE code CODE >442:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7EF code CODE >443:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F0 code CODE >444:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F1 code CODE >445:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F2 code CODE >446:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F3 code CODE >447:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F4 code CODE >448:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F5 code CODE >449:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F6 code CODE >450:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F7 code CODE >456:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F8 code CODE >457:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7F9 code CODE >458:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7FA code CODE >459:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7FB code CODE >460:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7FC code CODE >461:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7FD code CODE >462:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7FE code CODE >463:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+7FF code CODE >465:/home/sebastian/MPLABXProjects/seguidor-linea.X/main.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 22 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresetVec 0 0 ABS 0 resetVec -
+__HresetVec 0 0 ABS 0 resetVec -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4010 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 800 0 ABS 0 - -
+__S1 22 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+resetVec 0 721 E42 3 2
+code 0 724 E48 DC 2
+udata_bank0 1 20 20 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
